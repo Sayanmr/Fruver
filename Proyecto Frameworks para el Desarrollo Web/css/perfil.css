@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle,#efefef,#acacac);
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+.navegador{
+    background-color:#76ba3f;
+    padding: 10px;
+    margin: 0px;
+    max-height: 100px;
+}
+.lista-n{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.itemlista-n{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    margin: 0px 10px;
+    width: 100px;
+}
+.link-n{
+    text-decoration: none;
+    color: #efefef;
+    margin: 0 15px;
+}
+.carrito {
+    padding: 0 10px;
+}
+.img-c{
+    width: 30px;
+    height: 30px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.perfil, .carrito {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.perfil h2, .info p {
+    margin: 0.5rem 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.logout{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 800px;
+}
+.logout:hover{
+    background-color: #45a049;
+}
+.ircar{
+    text-decoration: none;
+    color: white;
+}

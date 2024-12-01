@@ -1,0 +1,154 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle,#efefef,#acacac);
+    margin: 0px;
+    padding: 0px;
+    color: #efefef;
+    font-size: 30px;
+}
+.navegador{
+    background-color:#76ba3f;
+    padding: 10px;
+    margin: 0px;
+    max-height: 100px;
+}
+.lista-n{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.itemlista-n{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    margin: 0px 10px;
+    width: 100px;
+}
+.link-n{
+    text-decoration: none;
+    color: #efefef;
+    margin: 0 15px;
+}
+.carrito {
+    padding: 0 10px;
+}
+.img-c{
+    width: 30px;
+    height: 30px;
+}
+.salchipapa{
+    display: flex;
+    flex-direction: row;
+}
+.salchi{
+    padding-left: 200px;
+    padding-top: 50px;
+    padding-right:20px;
+}
+.descuentogrande{
+    border: 20px solid #e88774;
+    border-radius: 20px;
+    width: 700px;
+    height: 700px;
+}
+.papa{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 10px;
+    width: 45%;
+}
+
+.promociones{
+    background-color: #588d3c;
+    border-radius: 18px;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.imgp{
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.info-rojo{
+    color: #ff5533;
+}
+.titulo{
+    flex: 1;
+}
+.pedir{
+    color: #efefef;
+    border-radius: 10px;
+    background-color: #e88774;
+    cursor: pointer;
+    padding: 10px;
+    border: 5px solid #e88774;
+}
+.pedir:hover{
+    color: #dbdbdb;
+    background-color: #d67c69;
+    border: 5px solid #d67c69;
+}
+.promocion--2{
+    background-color: #d13b1e;
+}
+.promocion--3{
+    background-color: #ffb02c;
+}
+.promocion--4{
+    background-color: #545454;
+}
+.a{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    width: 100%;
+}
+.tipo{
+    font-size: 20px;
+    flex: 1;
+    background-color: #588d3c;
+    border-radius: 10px;
+    border: #588d3c;
+    padding: 10px;
+    color: #efefef;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.tipo:hover{
+    background-color: #4c793b;
+    border: #4c793b;
+}
+.frutas{
+    background-color: #d13b1e;
+    border: #d13b1e;
+}
+.frutas:hover{
+    background-color: #ad3017;
+    border: #ad3017;
+}
+.legumbres{
+    background-color: #ffb02c;
+    border: #ffb02c;
+}
+.legumbres:hover{
+    background-color: #e48900;
+    border: #e48900;
+}
+.cereales{
+    background-color: #545454;
+    border: #545454;
+}
+.cereales:hover{
+    background-color: #3a3a3a;
+    border: #3a3a3a;
+}

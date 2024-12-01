@@ -1,0 +1,142 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle, #efefef, #acacac);
+    margin: 0px;
+    padding: 0px;
+    color: #efefef;
+    font-size: 30px;
+}
+.navegador{
+    background-color: #76ba3f;
+    padding: 10px;
+    margin: 0px;
+    max-height: 100px;
+    margin-bottom: 100px;
+}
+.lista-n{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.itemlista-n{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    margin: 0px 10px;
+    width: 100px;
+}
+.link-n{
+    text-decoration: none;
+    color: #efefef;
+    margin: 0 15px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-list{
+    list-style-type: none;
+    padding: 0;
+}
+.product-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.product-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+}
+.product-price{
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+}
+.delete-btn{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 30px;
+}
+.delete-btn:hover{
+    background-color: #c82333;
+}
+.no-products, .no-cart, .error{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #dc3545;
+    margin-top: 20px;
+}
+.no-products{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #a79028;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.no-cart{
+    color: #ff8c00;
+}
+.success{
+    color: #28a745;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.contenedor-comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.boton-comprar{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+.boton-comprar:hover{
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+.boton-comprar:active{
+    background-color: #1e7e34;
+    transform: translateY(1px);
+}

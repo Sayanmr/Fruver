@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es  ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruver</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./img/logo2.png">
+</head>
+<body>
+    <nav class="navegador">
+        <ul class="lista-n">
+            <li class="itemlista-n">
+                <img class="logo-img" src="./img/logo2.png" alt="logo">
+            </li>
+            <li class="itemlista-n">
+                <a href="./usuario/perfil.php" class="link-n">Perfil</a>
+                <a href="./php/carrito.php" class="carrito"><img class="img-c" src="./img/carrito.png" alt="carrito"></a>
+            </li>
+        </ul>
+    </nav>
+    <section class="salchipapa">
+        <article class="salchi">
+            <img class="descuentogrande" src="./img/descuentopagiaprincipal.png" alt="descuentogrande">
+        </article>
+        <aside class="papa">
+            <div class="promociones">
+                <img src="./img/remolacha.png" alt="remolacha" class="imgp">                   
+                    <h1 class="titulo">REMOLACHA</h1>
+                    <p class="info-promo">3KG <p class="info-rojo">X</p> 2000</p>
+                    <form action="./php/añadiralcarrito.php" method="post">
+                        <input type="hidden" name="producto_id" value="41">
+                        <button type="submit" class="pedir">PEDIR YA!</button>
+                    </form>        
+            </div>
+
+            <div class="promociones promocion--2">  
+                <img src="./img/mango.jpg" alt="mango" class="imgp">                   
+                    <h1 class="titulo">Mango:</h1>
+                    <p class="info-rojo">15%</p><p class="info-promo"> DE DESCUENTO</p>
+<form action="./php/añadiralcarrito.php" method="post">
+                        <input type="hidden" name="producto_id" value="42">
+                        <button type="submit" class="pedir">PEDIR YA!</button>
+                    </form>
+            </div>
+
+            <div class="promociones promocion--3">
+                <img src="./img/frijol.JPG" alt="frijoles" class="imgp">                   
+                    <h1 class="titulo">Frijoles:</h1>
+                    <p class="info-rojo">40%</p><p class="info-promo"> DE DESCUENTO</p>
+<form action="./php/añadiralcarrito.php" method="post">
+                        <input type="hidden" name="producto_id" value="43">
+                        <button type="submit" class="pedir">PEDIR YA!</button>
+                    </form>
+            </div>
+
+            <div class="promociones promocion--4">
+                <img src="./img/avena.png" alt="avena" class="imgp">                   
+                    <h1 class="titulo">Avena:</h1>
+                    <p class="info-rojo">20%</p><p class="info-promo"> DE DESCUENTO</p>
+<form action="./php/añadiralcarrito.php" method="post">
+                        <input type="hidden" name="producto_id" value="44">
+                        <button type="submit" class="pedir">PEDIR YA!</button>
+                    </form>
+            </div>
+
+            <div class="a">
+            <a class="tipo" href="verduras.php">Verduras</a>
+            <a class="tipo frutas" href="frutas.php">Frutas</a>
+            </div>
+            <div class="a lyc">
+            <a class="tipo legumbres" href="legumbres.php">Legumbres</a>
+            <a class="tipo cereales" href="cereales.php">Cereales</a>
+            </div>
+        </aside>
+    </section>
+</body>
+</html>

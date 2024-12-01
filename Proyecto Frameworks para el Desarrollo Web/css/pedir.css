@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle, #efefef, #acacac);
+    margin: 0;
+    padding: 0;
+    color: #efefef;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+h1{
+    color: #798021;
+    margin: 20px 0;
+}
+p{
+    font-size: 1.2em;
+    margin: 10px 0; 
+}
+a{
+    text-decoration: none;
+    color: #007bff; 
+    font-size: 1.1em;
+    margin-top: 20px; 
+    display: inline-block; 
+}
+a:hover{
+    text-decoration: underline; 
+}
+.logo-img{
+    max-width: 200px;
+    margin-bottom: 20px; 
+}
