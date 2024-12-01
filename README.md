@@ -2,7 +2,7 @@
 Creado por:
 Sayan Mapura Riascos con T.I: 1089458837
 Carlos Aragon Jerez con C.C: 1081909783
-Haminton Andres 
+Haminton Andrés Blandón Blandón con C.C: 1003929210
 
 ## Que necesitas para ejecutar la pagina:
 • Xampp
