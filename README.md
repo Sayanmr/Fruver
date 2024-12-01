@@ -8,7 +8,7 @@ Haminton Andres
 • Xampp
 • Visual Studio Code
 
-##Pasos a seguir:
+## Pasos a seguir:
 
 **1.** Descargar el repositorio en ZIP
 ![image](https://github.com/user-attachments/assets/76371edb-36e4-4452-890f-5ec6e34809ff)
