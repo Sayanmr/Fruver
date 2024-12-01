@@ -61,7 +61,8 @@ Haminton Andres
 ![image](https://github.com/user-attachments/assets/491d279e-bbe7-4364-a0a2-da09794a0734)
 
 **13.** Ahora copiaremos el nombre de la carpeta de nuestra pagina (F2) y (Ctr+C)
-![image](https://github.com/user-attachments/assets/042d723a-dcc3-41c7-8a63-fe28dde6c8ab)
+![image](https://github.com/user-attachments/assets/50b8fc90-97da-4262-8083-40f94c109257)
+
 
 **14.** Pegaremos el nombre en la url remplazando "dashboard"
 ![image](https://github.com/user-attachments/assets/a57ae735-7cfe-4950-b8f7-c684095b7b8e)
