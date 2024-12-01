@@ -15,6 +15,7 @@ Haminton Andres
 
 **2.** Llevar el ZIP descargado a la ruta "C:\xampp\htdocs"
 ![image](https://github.com/user-attachments/assets/e7079e26-f4c4-41f0-a49c-c6f1389d6e6c)
+ 
  *o si descargaste xampp en otra direccion puedes abrir la aplicacion y en la opcion de explorador te abrira la carpeta donde debes guardar el zip*
  ![image](https://github.com/user-attachments/assets/d6f48a6f-9dce-4110-a3a1-5dd24cd5310a)
  
