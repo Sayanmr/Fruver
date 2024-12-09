@@ -1,19 +1,23 @@
--- Crear la base de datos
 CREATE DATABASE fruver_db;
 
--- Usar la base de datos
 USE fruver_db;
 
--- Crear tabla 'productos'
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100),  -- Usar 100 caracteres, ya que parece más que suficiente
-    tipo VARCHAR(100),    -- Usar 100 caracteres
+    nombre VARCHAR(100),
+    tipo VARCHAR(100),
     precio DECIMAL(10,2),
     cantidad INT
 );
+CREATE TABLE cargo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descripcion VARCHAR(100)
+);
 
--- Insertar productos de ejemplo
+INSERT INTO cargo (id, descripcion) VALUES
+(1, 'Administrador'),
+(2, 'Usuario');
+
 INSERT INTO productos (nombre, tipo, precio, cantidad) VALUES
 ('Arroz', 'Cereal', 2.50, 1000),
 ('Maíz', 'Cereal', 1.80, 1200),
@@ -60,34 +64,31 @@ INSERT INTO productos (nombre, tipo, precio, cantidad) VALUES
 ('Frijoles 40% de descuento', 'Promocion', 2.60, 650),
 ('Avena 20% de descuento', 'Promocion', 3.00, 650);
 
--- Crear tabla 'usuario'
 CREATE TABLE usuario (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100),
     apellido VARCHAR(100),
     correo VARCHAR(255) UNIQUE,
     contraseña VARCHAR(255),
-    fecha_nacimiento DATE
+    fecha_nacimiento DATE,
+    id_cargo INT,
+    FOREIGN KEY (id_cargo) REFERENCES cargo(id)
 );
 
--- Insertar usuarios de ejemplo
-INSERT INTO usuario (nombre, apellido, correo, contraseña, fecha_nacimiento) VALUES
-('Juan', 'Pérez', 'juan.perez@correo.com', 'password123', '1990-05-15'),
-('Maria', 'Gómez', 'maria.gomez@correo.com', 'password456', '1985-08-20');
+INSERT INTO usuario (nombre, apellido, correo, contraseña, fecha_nacimiento, id_cargo) VALUES
+('Juan', 'Pérez', 'juan.perez@correo.com', 'password123', '1990-05-15','1'),
+('Maria', 'Gómez', 'maria.gomez@correo.com', 'password456', '1985-08-20','2');
 
--- Crear tabla 'carro'
 CREATE TABLE carro (
     id INT AUTO_INCREMENT PRIMARY KEY,
     carrito INT,
     fecha_creado DATE
 );
 
--- Insertar carritos de ejemplo
 INSERT INTO carro (carrito, fecha_creado) VALUES
 (1, '2024-11-29'),
 (2, '2024-11-28');
 
--- Crear tabla 'carritos_productos'
 CREATE TABLE carritos_productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     carrito_id INT,
@@ -96,14 +97,12 @@ CREATE TABLE carritos_productos (
     FOREIGN KEY (producto_id) REFERENCES productos(id)
 );
 
--- Insertar productos en los carritos
 INSERT INTO carritos_productos (carrito_id, producto_id) VALUES
-(1, 1),  -- Arroz en carrito 1
-(1, 2),  -- Maíz en carrito 1
-(2, 3),  -- Manzana en carrito 2
-(2, 4);  -- Tomate en carrito 2
+(1, 1),
+(1, 2),
+(2, 3),
+(2, 4);
 
--- Crear tabla 'usuario_carrito'
 CREATE TABLE usuario_carrito (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id INT,
@@ -112,7 +111,6 @@ CREATE TABLE usuario_carrito (
     FOREIGN KEY (carrito_id) REFERENCES carro(id)
 );
 
--- Insertar usuarios con carritos
 INSERT INTO usuario_carrito (usuario_id, carrito_id) VALUES
-(1, 1),  -- Usuario Juan tiene el carrito 1
-(2, 2);  -- Usuario Maria tiene el carrito 2
+(1, 1),
+(2, 2);
