@@ -71,8 +71,8 @@ CREATE TABLE usuario (
     correo VARCHAR(255) UNIQUE,
     contraseña VARCHAR(255),
     fecha_nacimiento DATE,
-    id_cargo INT,
-    FOREIGN KEY (id_cargo) REFERENCES cargo(id)
+    id_cargo INT DEFAULT 2,
+    FOREIGN KEY (id_cargo) REFERENCES cargo(id) 
 );
 
 INSERT INTO usuario (nombre, apellido, correo, contraseña, fecha_nacimiento, id_cargo) VALUES
