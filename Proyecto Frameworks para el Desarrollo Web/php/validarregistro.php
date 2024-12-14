@@ -18,7 +18,7 @@ $resultado = mysqli_query($conexion, $consulta);
 if (mysqli_num_rows($resultado) > 0) {
     echo '<div class="alert alert-warning">El correo ya está registrado. Por favor, use otro correo.</div>';
 } else {
-    $sql = $conexion->query("INSERT INTO usuario (nombre, apellido, correo, contraseña, fecha_nacimiento, id_cargo) VALUES ('$nombre', '$apellido', '$correo', '$contraseña', '$fecha_nacimiento',2)");
+    $sql = $conexion->query("INSERT INTO usuario (nombre, apellido, correo, contraseña, fecha_nacimiento) VALUES ('$nombre', '$apellido', '$correo', '$contraseña', '$fecha_nacimiento')");
 
     if ($sql) {
         header("location:login.php");
